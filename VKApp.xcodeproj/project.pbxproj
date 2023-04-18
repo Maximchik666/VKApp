@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		99CDC80D29EEDF0600642B66 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99CDC80C29EEDF0600642B66 /* CoreDataManager.swift */; };
+		99CDC81029EEE8FA00642B66 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 99CDC80F29EEE8FA00642B66 /* Alamofire */; };
+		99CDC81329EEE90F00642B66 /* TinyConstraints in Frameworks */ = {isa = PBXBuildFile; productRef = 99CDC81229EEE90F00642B66 /* TinyConstraints */; };
 		99EBE2B629EEDD8700CEB12E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99EBE2B529EEDD8700CEB12E /* AppDelegate.swift */; };
 		99EBE2B829EEDD8700CEB12E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99EBE2B729EEDD8700CEB12E /* SceneDelegate.swift */; };
 		99EBE2BA29EEDD8700CEB12E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99EBE2B929EEDD8700CEB12E /* ViewController.swift */; };
@@ -58,6 +60,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99CDC81029EEE8FA00642B66 /* Alamofire in Frameworks */,
+				99CDC81329EEE90F00642B66 /* TinyConstraints in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,6 +166,10 @@
 			dependencies = (
 			);
 			name = VKApp;
+			packageProductDependencies = (
+				99CDC80F29EEE8FA00642B66 /* Alamofire */,
+				99CDC81229EEE90F00642B66 /* TinyConstraints */,
+			);
 			productName = VKApp;
 			productReference = 99EBE2B229EEDD8700CEB12E /* VKApp.app */;
 			productType = "com.apple.product-type.application";
@@ -234,6 +242,10 @@
 				Base,
 			);
 			mainGroup = 99EBE2A929EEDD8700CEB12E;
+			packageReferences = (
+				99CDC80E29EEE8FA00642B66 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				99CDC81129EEE90F00642B66 /* XCRemoteSwiftPackageReference "TinyConstraints" */,
+			);
 			productRefGroup = 99EBE2B329EEDD8700CEB12E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -618,6 +630,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		99CDC80E29EEE8FA00642B66 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		99CDC81129EEE90F00642B66 /* XCRemoteSwiftPackageReference "TinyConstraints" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/roberthein/TinyConstraints";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		99CDC80F29EEE8FA00642B66 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 99CDC80E29EEE8FA00642B66 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		99CDC81229EEE90F00642B66 /* TinyConstraints */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 99CDC81129EEE90F00642B66 /* XCRemoteSwiftPackageReference "TinyConstraints" */;
+			productName = TinyConstraints;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		99EBE2BE29EEDD8700CEB12E /* VKApp.xcdatamodeld */ = {
